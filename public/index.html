@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/1c5b2bd09d.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body class=" bg-gray-500">
-    <h1 class="text-lg"> Helle word</h1>
+    <div class="container max-w-7xl mx-auto">
+            <!-- header  -->
+            <div class=" w-full my-7 p-2">
+                <h1 class=" text-7xl text-center">
+                    TO DO LIST
+                </h1>
+            </div>
+            <!-- input text  -->
+            <div>
+                <input type="text" id="inputIteam">
+                <button id="add-Task-Button">Add</button>
+                <button  style="display: none;" id="edit-Task-Button">Edit todo</button>
+            </div>
+            <!-- todo list  -->
+            <div>
+                <ul id="listBox">
+                    <li>
+                        <p>TO do list para</p>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button<i class="fa-solid fa-trash"></i></button>
+                    </li>
+                </ul>
+            </div>
+    </div>
     
 </body>
+<script src="./script.js"></script>
 </html>
