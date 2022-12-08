@@ -11,30 +11,36 @@
       crossorigin="anonymous"
     ></script>
 </head>
-<body class=" bg-gray-500">
-    <div class="container max-w-7xl mx-auto">
+<body class=" bg-Black-dark text-gray-50">
+    <div class="container w-11/12 max-w-4xl mx-auto">
             <!-- header  -->
-            <div class=" w-full my-7 p-2">
-                <h1 class=" text-7xl text-center">
-                    TO DO LIST
+            <div class=" w-full my-7 p-2 bg-Black-light rounded-3xl">
+                <h1 class=" text-4xl text-center bg-Black-light ">
+                    To Do
                 </h1>
             </div>
             <!-- input text  -->
             <div>
-                <input type="text" id="inputIteam">
-                <button id="add-Task-Button">Add</button>
-                <button  style="display: none;" id="edit-Task-Button">Edit todo</button>
+                <form class="relative">
+                <input type="text" id="inputIteam" required placeholder="Add Todo" class=" w-full bg-Black-light p-3  rounded-2xl ">
+                <button id="add-Task-Button" submit class=" absolute right-0  w-1/4 py-3 px-4 rounded-[0_1rem_1rem_0] bg-pink text-Black-dark font-bold">Add</button>
+                <button  style="display: none;" id="edit-Task-Button" class=" absolute right-0  w-1/4 py-3 px-4 rounded-[0_1rem_1rem_0] bg-pink text-Black-dark font-bold" submit> Save</button>  
+                </form>
             </div>
             <!-- todo list  -->
             <div>
                 <ul id="listBox">
-                    <li>
-                        <p>TO do list para</p>
-                        <button><i class="fa-solid fa-pen-to-square"></i></button>
-                        <button<i class="fa-solid fa-trash"></i></button>
-                    </li>
                 </ul>
             </div>
+            <!-- <div>
+                <ul id="">
+                    <li class=" w-full bg-Black-light p-3  rounded-2xl my-6 relative">
+                        <p>TO do list para</p>
+                        <button  onclick='edit(${index})' class="absolute right-[3%] -top-1/4 px-2 lg:px-3 py-1 rounded-xl bg-pink text-Black-dark font-bold"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button  onclick='deleteTodo(${index})' class=" absolute right-[14%] sm:right-[12%] md:right-[10%] lg:right-[10%] -top-1/4 px-2 lg:px-3 py-1 rounded-xl bg-pink text-Black-dark font-bold"><i class="fa-solid fa-trash"></i></button>
+                    </li>
+                </ul>
+            </div> -->
     </div>
     
 </body>
